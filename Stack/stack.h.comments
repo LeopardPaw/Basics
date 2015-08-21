@@ -1,0 +1,67 @@
+/*if((float *)((int *)element) != (float *) element)
+	{
+		switch(sizeof(stackP->top))
+		{
+			case(4): {
+						float *temp=(float *)stackP->contents; ++temp=(float *)element;stackP->top=element;
+						stackP->contents=temp;free(temp);break;
+					 }
+			case(8): {
+						double *temp=(double *)stackP->contents; ++temp=(double *)element;stackP->top=element;
+						stackP->contents=temp;free(temp);break;
+					 }
+			case(10): {
+						long double *temp=(long double *)stackP->contents; ++temp=(long double *)element;stackP->top=element;
+						stackP->contents=temp;free(temp);break;
+					  }
+		}
+	}
+	switch(sizeof(stackP->top))
+	{
+		case(1): {
+					char *temp=(char *)stackP->contents; ++temp=(char *)element;stackP->top=element;
+					stackP->contents=temp;free(temp);break;
+				 }
+		case(2): {
+					int *temp=(int *)stackP->contents; ++temp=(int *)element;stackP->top=element;
+					stackP->contents=temp;free(temp);break;
+				 }
+		case(4): {
+					long *temp=(long *)stackP->contents; ++temp=(long *)element;stackP->top=element;
+					stackP->contents=temp;free(temp);break;
+				 }
+	}*/
+/*if((float *)((int *)stackP->top)!=(float *) stackP->top)
+	{
+		switch(sizeof(stackP->top))
+		{
+			case(4): {
+						float *temp=(float *)stackP->contents; stackP->top=temp--;
+						stackP->contents=temp; free(temp); return stackP->top;
+					 }
+			case(8): {
+						double *temp=(double *)stackP->contents; stackP->top=temp--;
+						stackP->contents=temp; free(temp); return stackP->top;
+					 }
+			case(10): {
+						long double *temp=(long double *)stackP->contents; stackP->top=temp--;
+						stackP->contents=temp; free(temp); return stackP->top;
+						//return stackP->contents[stackP->top--];
+					  }
+		}
+	}
+	switch(sizeof(stackP->top))
+	{
+		case(2): {
+					int *temp=(int *)stackP->contents; stackP->top=temp--;
+					stackP->contents=temp; free(temp); return stackP->top;
+				 }
+		case(4): {
+					long *temp=(long *)stackP->contents; stackP->top=temp--;
+					stackP->contents=temp; free(temp); return stackP->top;
+				 }
+		default: {
+					char *temp=(char *)stackP->contents; stackP->top=temp--;
+					stackP->contents=temp; free(temp); return stackP->top;
+					//return stackP->contents[stackP->top--];
+				 }*/

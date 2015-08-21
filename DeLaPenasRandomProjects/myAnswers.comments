@@ -1,0 +1,17 @@
+//System.out.println("Press any key to continue.");
+//i.nextLine();
+//returns all non null answers in paramater or "No valid strings found." if all are null
+/*static void pickAnswers(ArrayList<String> answers) //this was made redundant by an update to generateAnswers.  
+{
+	for(int x=0;x<answers.size();x++)
+	{
+		if(answers.get(x)!=null)
+			answers.set(x,"Base "+(x+2)+":: "+answers.get(x));
+		else
+			answers.remove(x--);
+	}
+	if(answers.size()==0)
+		answers.add("No valid strings found.");
+}*/
+//Scanner scan = null; //without this assignment the scanner would only exist if the assignment in the try block worked, otherwise it would be invalid 
+//above is needed when Scanner is used with try catch blocks
