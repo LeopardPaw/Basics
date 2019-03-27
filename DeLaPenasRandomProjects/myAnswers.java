@@ -7,10 +7,10 @@
  *
  *  Note: Unprintable / unrecognizable Unicode characters were assigned the value 'X'
  *
- *  This is the runner/driver file, which contains only the main method.
+ *
  *  All of the File I/O handling and output production is handled by the main method.
  *	
- * @author Corbin Adamson
+ * @author Lyra Wolves
  * @version 1.25 2015/9/12
  */
 import java.io.File;
